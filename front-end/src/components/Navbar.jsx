@@ -1,7 +1,7 @@
 import React from 'react';
 import { Stack } from '@mui/material';
 import { Link } from 'react-router-dom';
-
+import { SearchBar } from '../components';
 import { logo } from '../utils/constants';
 
 const Navbar = () => (
@@ -18,7 +18,7 @@ const Navbar = () => (
         <Link to="/" style={{display:'flex', alignItems:'center'}}>
           <img src={logo} alt="logo" height={45}/>
         </Link>
-        
+        <SearchBar />
   </Stack>
 )
 
