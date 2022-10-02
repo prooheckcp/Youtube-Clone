@@ -47,9 +47,9 @@ const VideoCard = ({video:{id:{videoId}, snippet}}) => {
               sx={{
                 fontSize:12,
                 color:'gray',
-                ml:5
+                ml:'5px'
               }}
-            ></CheckCircle>
+            />
           </Typography>
         </Link>
       </CardContent>
