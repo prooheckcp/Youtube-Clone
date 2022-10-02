@@ -15,7 +15,7 @@ const Feed = () => {
       setVideos(data.items);
     });
 
-  }, [setSelectedCategory])
+  }, [selectedCategory])
 
   return (
     <Stack
