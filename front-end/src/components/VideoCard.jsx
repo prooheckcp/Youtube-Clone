@@ -5,6 +5,7 @@ import { Typography, Card, CardContent, CardMedia } from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
 
 import { demoThumbnailUrl, demoVideoUrl, demoChannelUrl, demoChannelTitle, demoVideoTitle } from '../utils/constants';
+import ChannelDetail from './ChannelDetail';
 
 const VideoCard = ({video:{id:{videoId}, snippet}}) => {
 
@@ -51,6 +52,11 @@ const VideoCard = ({video:{id:{videoId}, snippet}}) => {
               }}
             />
           </Typography>
+          {ChannelDetail?.statistics?.subscriberCounter && (
+            <Typography>
+              {parseInt(ChannelDetail?.statistics?.subscriberCounter).toLocaleString()} Subscribers
+            </Typography>
+          )}
         </Link>
       </CardContent>
     </Card>
